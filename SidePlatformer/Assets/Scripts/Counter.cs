@@ -9,7 +9,7 @@ public class Counter : MonoBehaviour
     public int creditValue = 3;
     public Text counterText;
     
-    void OnTriggerEnter2D()
+    void OnTriggerEnter2D(Collider2D other)
     {
         numberCount += creditValue;
         counterText.text = numberCount.ToString();
