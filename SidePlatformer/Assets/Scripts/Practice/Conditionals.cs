@@ -1,18 +1,23 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Conditionals : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int age = 18;
+    public bool DriversLicense;
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (age >= 16)
+        {
+            DriversLicense = true;
+            Console.WriteLine("Age Verified!");
+        }
+        else
+        {
+            DriversLicense = false;
+            Console.WriteLine("Age declined.");
+        }
     }
 }
