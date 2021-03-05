@@ -9,7 +9,7 @@ public class Switches : MonoBehaviour
     public int ovenTemperature;
     void Start()
     {
-        switch (ovenSetting) 
+        switch (ovenSetting)
         {
             case 1:
                 Console.WriteLine("Temperature Setting 1");
@@ -39,5 +39,6 @@ public class Switches : MonoBehaviour
                 Console.WriteLine("Temperature Setting 7");
                 ovenTemperature = 400;
                 break;
+        }
     }
 }
