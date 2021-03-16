@@ -1,18 +1,21 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ForLoopswithArray : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
+        int[] channels = { 0, 3, 2, 5,};
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        for (int marbles = 0; marbles < 10; marbles++)
+        {
+            channels[0]++;
+            channels[1]++;
+            channels[2]++;
+            channels[3]++;
+            Console.WriteLine(channels);
+        }
     }
 }

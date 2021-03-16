@@ -1,18 +1,21 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Build.Content;
 using UnityEngine;
 
 public class WhileLoops : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        int speed = 1;
+        int gasLevel = 10;
+        do
+        {
+            speed= speed*2;
+            gasLevel--;
+            Console.WriteLine("Car speed is " + speed + " with " + gasLevel + "mL fuel remaining.");
+        } 
+        while (gasLevel > 1);
     }
 }
